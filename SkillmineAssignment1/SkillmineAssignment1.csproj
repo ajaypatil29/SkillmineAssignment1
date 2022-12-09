@@ -3,7 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>SkillmineAssignment1.Skillmine6.AseDesArray</StartupObject>
+	  <StartupObject>SkillmineAssignment1.Skillmine6.Primearray</StartupObject>
   </PropertyGroup>
 
 </Project>
