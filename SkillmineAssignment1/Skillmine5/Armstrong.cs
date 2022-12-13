@@ -12,7 +12,7 @@ namespace Skillmineproject5
            
 
             int rem;
-            int cube; ;
+            int cube; 
             int result = 0;
 
             Console.WriteLine("Enter the number");

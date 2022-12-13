@@ -10,6 +10,9 @@ namespace SkillmineProject
     {
         static void Main(string[] args)
         {
+
+            // Extension Method
+            
             /*Student Obj1 = new Student("Yash", 75, 77, 89,1);
             Student Obj2= new Student("jay", 71, 54, 79,3);
             Student Obj3= new Student("raj", 71, 77, 69,4);
@@ -37,15 +40,18 @@ namespace SkillmineProject
 
 
             //Abstract Method
-            circle a = new circle(12);
-            a.Calculation();
-            Console.WriteLine(a);
-            Rectangle b = new Rectangle(45, 12);
-            b.Calculation();
-            Console.WriteLine(b);
-            Triangle c = new Triangle(15,25);
-            c.Calculation();
-            Console.WriteLine(c);
+            /* circle a = new circle(12);
+             a.Calculation();
+             Console.WriteLine(a);
+             Rectangle b = new Rectangle(45, 12);
+             b.Calculation();
+             Console.WriteLine(b);
+             Triangle c = new Triangle(15,25);
+             c.Calculation();
+             Console.WriteLine(c);*/
+
+
+
 
         }
     }
