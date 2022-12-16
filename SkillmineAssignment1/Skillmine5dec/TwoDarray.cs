@@ -8,9 +8,9 @@ namespace SkillmineAssignment1.Skillmine5dec
     {
         public void Array(int[,]a)
         {
-            for (int i = 0; i <4 ; i++)
+            for (int i = 0; i <a.GetLength(0) ; i++)
             {
-                for(int j=0;j<3;j++)
+                for(int j=0;j<a.GetLength(1);j++)
                 {
                     Console.Write(a[i,j]);
                 }
