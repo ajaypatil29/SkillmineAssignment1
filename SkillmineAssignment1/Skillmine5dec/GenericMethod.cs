@@ -6,6 +6,13 @@ namespace SkillmineAssignment1.Skillmine5dec
 {
     class GenericMethod
     {
+        int id;
+        int name;
+        int price;
+        public GenericMethod(int id,int name,int price)
+        {
+            
+        }
         static void  Main(string []args)
         {
             List<int> list1 = new List<int>();

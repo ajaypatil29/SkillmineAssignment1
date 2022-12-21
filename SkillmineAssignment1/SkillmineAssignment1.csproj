@@ -3,9 +3,7 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-	  <StartupObject>
-		  SkillmineAssignment1.Skillmine5dec.Programm
-	  </StartupObject>
+	  <StartupObject>SkillmineAssignment1.Skillmine5dec.ShiftArrayElement</StartupObject>
   </PropertyGroup>
 
 </Project>

@@ -25,8 +25,8 @@ namespace SkillmineProject
             Console.WriteLine(obj1);
             Console.WriteLine(obj2);
             Console.WriteLine(obj3);
-            Console.WriteLine(obj4);
-            *//*string data = obj4.Print();
+            Console.WriteLine(obj4);*//**/
+            /*string data = obj4.Print();
             Console.WriteLine(data);*//*
             SalesManager obj5 = new SalesManager("xyz", 50000, 2000);
             obj5.calculatesalary();
