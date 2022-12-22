@@ -22,34 +22,35 @@ namespace Skillmineproject5
                 count++; 
              
             }
-            
-                num = original;
-                while (num>0)
+            num = original;
+            while (num > 0)
+            {
+                int power = 1;
+                int r = num % 10;
+                for (int i = 1; i <=count; i++)
                 {
-                    int power = 1;
-                    int r = num % 10;
-                    for (int i=1;1<=count; i++)
-                    {
-                        power = power * r;
+                    power = power * r;
 
-                    }
-                    {
-                        sum = sum + power;
-                        count--;
-                        num = num / 10;
-                    }
-                    if (original ==sum )
-                    {
-                        Console.WriteLine("disarium number");
-
-                    }
-                    else
-                    {
-                        Console.WriteLine("disarium number");
-                    }
                 }
-            
-            
+                {
+                    sum = sum + power;
+                    count--;
+                    num = num / 10;
+                }
+                
+                
+            }
+            if (original == sum)
+            {
+                Console.WriteLine("disarium number");
+
+            }
+            else
+            {
+                Console.WriteLine("not disarium number");
+            }
+
+
 
 
 

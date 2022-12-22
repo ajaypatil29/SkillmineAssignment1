@@ -8,6 +8,7 @@ namespace SkillmineAssignment1.Skillmine5dec
     {
         static void  Main(string []args)
         {
+            int k = 1;
             for (int i = 1; i <=4; i++)
             {
                 for (int j = 4; j >=1; j--)
@@ -18,7 +19,7 @@ namespace SkillmineAssignment1.Skillmine5dec
                     }
                     else
                     {
-                        Console.Write(" *");
+                        Console.Write($" {k++}");
                     }
                     
                 }
