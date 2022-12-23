@@ -22,6 +22,13 @@ namespace SkillmineProject
                 return a + b - d * s;
             }
         
+        static void Main(string []args)
+        {
+            calculation c1 = new calculation();
+            c1.Operation(1, 2);
+            Console.WriteLine(c1.Operation(1, 2,3,4));
+           
+        }
 
     }
 

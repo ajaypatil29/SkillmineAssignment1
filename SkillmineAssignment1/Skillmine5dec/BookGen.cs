@@ -9,14 +9,15 @@ namespace SkillmineAssignment1.Skillmine5dec
     {
         public string NameAuthour { get; set; }
        
-        public Catagery Catagery;
-        public List<books> list2 = new List<books>();
+        
+        
     }
     public class books
     {
         public int price { get; set; }
         public string  Name { get; set; }
-        
+        public Catagery Catagery;
+        public List<Author> list3 = new List<Author>();
     }
 
 
@@ -24,38 +25,42 @@ namespace SkillmineAssignment1.Skillmine5dec
     {
         static void Main(string []args)
         {
-            List<Author> List1 = new List<Author>()
+            List<books >list4=new List<books> ()          
             {
-                new Author {Catagery =Catagery.Drama ,NameAuthour ="abc", list2={ new books { Name="ABC",price =123} } },
-                new Author {Catagery =Catagery.Drama ,NameAuthour ="abc", list2={ new books { Name="ABCD",price =1234} } },
-                new Author {Catagery =Catagery.Comedy  ,NameAuthour ="pqr", list2={ new books { Name="PQR",price =234} } },
-                new Author {Catagery =Catagery.Comedy ,NameAuthour ="pqr", list2={ new books { Name="PQRS",price =2345} } },
-                 new Author {Catagery =Catagery.suspens   ,NameAuthour ="xyz", list2={ new books { Name="XYZ",price =534} } },
-                new Author {Catagery =Catagery.suspens  ,NameAuthour ="xyz", list2={ new books { Name="XYZA",price =4545} } },
+                new books  {Catagery =Catagery.Drama ,  Name="ABC",price =123,list3={ new Author { NameAuthour ="abc"} } } ,
+                new books  {Catagery =Catagery.Drama ,  Name="ABCD",price =153,list3={ new Author { NameAuthour ="abc"} } } ,
+                new books  {Catagery =Catagery.Comedy  ,  Name="PQR",price =145,list3={ new Author { NameAuthour ="abc"} } } ,
+                new books  {Catagery =Catagery.Comedy  ,  Name="PQRS",price =453,list3={ new Author { NameAuthour ="pqr"} } } ,
+                new books  {Catagery =Catagery.suspens  ,  Name="XYZ",price =253,list3={ new Author { NameAuthour ="pqr"} } } ,
+                new books  {Catagery =Catagery.suspens  ,  Name="XYZa",price =223,list3={ new Author { NameAuthour ="pqr"} } } ,
+
+
 
             };
-            foreach (Author  c in List1)
+            foreach (books   c in list4 )
             {
-                Console.WriteLine($"Catagery={c.Catagery}," +
-                    $"\tName Of Author={c.NameAuthour }");
+                Console.WriteLine($"Catagery={c.Catagery }," +
+                    $"\tName Of book={c.Name  }," +
+                    $"Price={c.price }");
 
-                foreach (books   d in c.list2 )
+                foreach (Author    d in c.list3 )
                 {
-                    Console.WriteLine($"\tBook Name={d.Name },Price={d.price }");
+                    Console.WriteLine($"\tAuthor Name={d.NameAuthour}");
                 }
                
             }
             Console.WriteLine("___________________________________________________________________________________");
-            foreach (Author  e in List1 )
+            foreach (books   e in list4 )
             {
                 if(e.Catagery ==Catagery.Comedy )
                 {
                     Console.WriteLine($"Catagery={e.Catagery}," +
-                    $"\tName Of Author={e.NameAuthour }");
+                    $"\tName Of Author={e.Name }," +
+                    $"Price={e.price }");
 
-                    foreach (books d in e.list2)
+                    foreach (Author  d in e.list3)
                     {
-                        Console.WriteLine($"\tBook Name={d.Name },Price={d.price }");
+                        Console.WriteLine($"\tAuthor Name={d.NameAuthour}");
                     }
                 }
             }
