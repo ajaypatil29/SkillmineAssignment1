@@ -9,9 +9,9 @@ namespace SkillmineAssignment1.Skillmine5dec
     {
         public event Mydel Pass;
         public event Mydel Fail;
-        public void Accept(int marks)
+        public void Accept(int marks,int b)
         {
-            if(marks >=40)
+            if(marks >=b)
             {
                 Pass();
 
@@ -45,7 +45,7 @@ namespace SkillmineAssignment1.Skillmine5dec
             s1.Fail += new Mydel(m.FailMess);
             Console.WriteLine("enter your marks");
             int marks = int.Parse(Console.ReadLine());
-            s1.Accept(marks);
+           /* s1.Accept(marks);*/
             
         }
     }

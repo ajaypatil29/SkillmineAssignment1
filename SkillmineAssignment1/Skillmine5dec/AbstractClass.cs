@@ -70,4 +70,14 @@ namespace SkillmineProject
             return $"Area={Area }";
         }
     }
+    public class Solution
+    {
+        static void Main(string []args)
+        {
+            Triangle a = new Triangle(25, 35);
+            a.Calculation();
+            Console.WriteLine(a);
+        }
+    }
+
 }
